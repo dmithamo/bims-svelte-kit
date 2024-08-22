@@ -15,3 +15,9 @@
 	font-weight: bold;
 	src: local(''), url('/fonts/CircularStd-Bold.ttf');
 }
+
+
+body {
+	font-family: 'Circular Std', sans-serif;
+	font-size: small;
+}
