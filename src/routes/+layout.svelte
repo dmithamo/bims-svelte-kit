@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import '../index.css';
+
 	let {
 		children
 	}: {
@@ -8,7 +9,9 @@
 	} = $props();
 </script>
 
-{@render children()}
+<div class="min-h-screen p-4">
+	{@render children()}
+</div>
 
 <style lang="postcss">
 	:global(html) {

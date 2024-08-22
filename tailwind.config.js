@@ -18,7 +18,8 @@ export default {
 				pLight: colors.zinc['900'],
 				sLight: colors.slate['50'],
 				aDark: colors.green['500'],
-				aLight: colors.emerald['500']
+				aLight: colors.emerald['500'],
+				danger: colors.red['500']
 			}
 		}
 	},
