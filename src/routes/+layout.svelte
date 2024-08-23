@@ -9,7 +9,7 @@
 	} = $props();
 </script>
 
-<div class="min-h-screen h-screen p-4">
+<div class="min-h-screen h-screen">
 	{@render children()}
 </div>
 

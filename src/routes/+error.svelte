@@ -3,12 +3,12 @@
 	import Logo from '$lib/components/logo.svelte';
 </script>
 
-<div class="flex flex-col items-center justify-center relative h-screen gap-4">
+<div class="flex flex-col items-center justify-center relative h-full gap-4">
 	<Logo />
 	<h1 class="text-3xl text-danger">Bims | Error {$page.status}</h1>
 
 	<p class="mt-4 text-danger">
-		{$page?.error?.message || 'Something went very wrong. Check back later&TRADE;'}
+		{@html $page?.error?.message || 'Something went very wrong. Check back later&TRADE;'}
 	</p>
 </div>
 

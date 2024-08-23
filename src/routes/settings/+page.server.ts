@@ -5,7 +5,7 @@ export const load: PageServerLoad = async () => {
 	const RAND = Math.random() * 10;
 
 	if (RAND > 3) {
-		throw error(400, 'Hello. This is an example error message');
+		throw error(400, 'Something went very wrong. Check back later&TRADE;');
 	}
 
 	return { rand: RAND };

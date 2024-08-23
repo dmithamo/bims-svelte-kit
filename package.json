@@ -14,13 +14,6 @@
 		"update-version": "sh scripts/update-version.sh",
 		"setup-local": "sh scripts/setup-local.sh"
 	},
-	"lint-staged": {
-		"src/**/*.{svelte,html,ts,js}": [
-			"npm run format",
-			"npm run lint",
-			"git add -A ."
-		]
-	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
@@ -35,7 +28,6 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
 		"globals": "^15.0.0",
-		"lint-staged": "^15.2.7",
 		"postcss": "^8.4.41",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
