@@ -8,7 +8,7 @@
 	<h1 class="text-3xl text-danger">Bims | Error {$page.status}</h1>
 
 	<p class="mt-4 text-danger">
-		{@html $page?.error?.message || 'Something went very wrong. Check back later&TRADE;'}
+		{$page?.error?.message || 'Something went very wrong. Check back later&TRADE;'}
 	</p>
 </div>
 
