@@ -15,9 +15,9 @@
 
 		<aside class="text-xs">
 			<p>
-				By using this application, you accept our <a
+				By using this application, you accept the <a
 					class="underline underline-offset-4"
-					href="/settings/terms">Terms and conditions</a
+					href="/settings/terms">terms and conditions</a
 				>
 			</p>
 		</aside>

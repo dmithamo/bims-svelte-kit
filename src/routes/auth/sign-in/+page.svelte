@@ -1,7 +1,14 @@
-<div class="flex flex-col gap-6 card">
+<script lang="ts">
+</script>
+
+<div class="flex flex-col gap-6">
 	<h1 class="card-title">Sign in to your account</h1>
 
-	<form class="w-full flex flex-col gap-4">
+	{#if 'form?.incorrectPassword'}
+		<p role="alert" class="alert alert-error">Wrong password</p>
+	{/if}
+
+	<form class="w-full flex flex-col gap-4" method="post">
 		<label class="input input-bordered flex items-center gap-2">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +20,13 @@
 					d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z"
 				/>
 			</svg>
-			<input type="text" class="grow" placeholder="Username or email or phone number" />
+			<input
+				required
+				name="username"
+				type="text"
+				class="grow"
+				placeholder="Username or email or phone number"
+			/>
 		</label>
 
 		<label class="input input-bordered flex items-center gap-2">
@@ -29,13 +42,13 @@
 					clip-rule="evenodd"
 				/>
 			</svg>
-			<input type="password" class="grow" placeholder="Password" />
+			<input required name="password" type="password" class="grow" placeholder="Password" />
 		</label>
 
 		<button type="submit" class="btn btn-primary">Sign in </button>
 	</form>
 
 	<aside class="">
-		<a class="underline underline-offset-4" href="forgot-password">Forgot your password?</a>
+		<a class="underline underline-offset-4" href="/auth/forgot-password">Forgot your password?</a>
 	</aside>
 </div>
