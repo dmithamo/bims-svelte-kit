@@ -13,5 +13,5 @@
 </div>
 
 <svelte:head>
-	<title>Bims | Error</title>
+	<title>Bims | Error | {$page.status}</title>
 </svelte:head>

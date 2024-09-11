@@ -2,7 +2,7 @@
 	import type { Snippet } from 'svelte';
 	import '../index.css';
 
-	let {
+	const {
 		children
 	}: {
 		children: Snippet;

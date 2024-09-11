@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 			fontSize: {
-				base: '12px'
+				base: '14px'
 			},
 			fontFamily: {
 				sans: ['Circular Std', 'sans-serif'],
@@ -23,12 +23,7 @@ export default {
 			// }
 		}
 	},
-	plugins: [
-		require('@tailwindcss/forms'),
-		require('@tailwindcss/typography'),
-		require('@tailwindcss/aspect-ratio'),
-		require('daisyui')
-	],
+	plugins: [require('@tailwindcss/typography'), require('daisyui')],
 	daisyui: {
 		themes: ['emerald', 'dark']
 	}
