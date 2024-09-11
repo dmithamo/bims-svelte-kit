@@ -10,14 +10,14 @@
 		<Logo size="small" />
 	</header>
 
-	<main class="w-full sm:w-1/2 py-4 flex-1 flex flex-col justify-start">
-		<div class="flex-1">{@render children()}</div>
+	<main class="w-full py-4 flex-1 flex flex-col justify-start sm:items-center">
+		<div class="flex-1 w-full sm:w-[400px]">{@render children()}</div>
 
 		<aside class="text-xs">
 			<p>
 				By using this application, you accept our <a
 					class="underline underline-offset-4"
-					href="settings/terms">Terms and conditions</a
+					href="/settings/terms">Terms and conditions</a
 				>
 			</p>
 		</aside>
