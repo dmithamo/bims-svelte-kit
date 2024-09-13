@@ -1,6 +1,14 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import '../index.css';
+	import 'carbon-components-svelte/css/all.css';
+	import {Toggle} from 'carbon-components-svelte'
+
+	const theme = 'white';
+
+	$effect(() => {
+		document.documentElement.setAttribute('theme', theme);
+	});
 
 	const {
 		children
@@ -13,14 +21,4 @@
 	{@render children()}
 </div>
 
-<style lang="postcss">
-	:global(html) {
-		font-size: theme(fontSize.base);
-		/* background-color: theme(colors.sLight); */
-		/* color: theme(colors.pLight); */
-		@media (prefers-color-scheme: dark) {
-			/* background-color: theme(colors.sDark); */
-			/* color: theme(colors.pDark); */
-		}
-	}
-</style>
+<Toggle class="fixed bottom-0 right-0" toggled />
